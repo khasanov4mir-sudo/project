@@ -35,19 +35,3 @@
 </div>
 
 </div>
-
----
-
-## Характеристики iPhone 16 Pro
-
-<table class="spec-table">
-  <tr><td>Экран</td><td>6.3" OLED, 2622×1206, 460 ppi, 120 Гц</td></tr>
-  <tr><td>Процессор</td><td>Apple A18 Pro (3 нм)</td></tr>
-  <tr><td>ОЗУ</td><td>8 ГБ</td></tr>
-  <tr><td>Память</td><td>256 / 512 ГБ / 1 ТБ</td></tr>
-  <tr><td>Основная камера</td><td>48 + 12 + 48 Мп</td></tr>
-  <tr><td>Фронтальная</td><td>12 Мп, автофокус</td></tr>
-  <tr><td>Аккумулятор</td><td>3582 мАч, MagSafe 25 Вт</td></tr>
-  <tr><td>ОС</td><td>iOS 18</td></tr>
-  <tr><td>Защита</td><td>IP68</td></tr>
-</table>
