@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap');
+
+:root {
+  --brand-pink: #ff2d78;
+  --brand-purple: #1a0a2e;
+  --brand-card: #120820;
+  --brand-border: #2d1050;
+  --brand-text: #e0d0ff;
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #1a0a2e 0%, #0d0618 100%);
+  border: 1px solid var(--brand-border);
+  border-radius: 12px;
+  padding: 4rem 3rem;
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(ellipse at center, rgba(255,45,120,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  letter-spacing: 0.05em;
+  color: #fff;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+
+.hero-title span {
+  color: var(--brand-pink);
+}
+
+.hero-subtitle {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  color: #9070b0;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  background: var(--brand-pink);
+  color: #fff !important;
+  padding: 0.85rem 2.5rem;
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 700;
+  text-decoration: none !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  margin: 0 0.5rem;
+}
+
+.hero-btn:hover {
+  background: #cc1a5e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255,45,120,0.4);
+}
+
+.hero-btn.outline {
+  background: transparent;
+  border: 2px solid var(--brand-border);
+  color: #9070b0 !important;
+}
+
+.hero-btn.outline:hover {
+  border-color: var(--brand-pink);
+  color: var(--brand-pink) !important;
+}
+
+.phones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.phone-card {
+  background: var(--brand-card);
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--brand-pink);
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+
+.phone-card:hover {
+  border-color: #4a1080;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(255,45,120,0.15);
+}
+
+.phone-card:hover::after {
+  transform: scaleX(1);
+}
+
+.phone-badge {
+  display: inline-block;
+  background: rgba(255,45,120,0.1);
+  color: var(--brand-pink);
+  border: 1px solid rgba(255,45,120,0.3);
+  border-radius: 3px;
+  padding: 0.2rem 0.6rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.phone-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 0.3rem;
+}
+
+.phone-specs {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  color: #6040a0;
+  margin: 0 0 1rem;
+  line-height: 1.6;
+}
+
+.phone-price {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.6rem;
+  color: var(--brand-pink);
+}
+
+.phone-price-old {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  color: #4a2080;
+  text-decoration: line-through;
+  margin-left: 0.4rem;
+}
+
+.buy-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--brand-pink);
+  color: #fff !important;
+  padding: 0.65rem;
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: 700;
+  text-decoration: none !important;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.buy-btn:hover {
+  background: #cc1a5e;
+}.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--brand-border);
+  border: 1px solid var(--brand-border);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.stat-item {
+  background: var(--brand-card);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2rem;
+  color: var(--brand-pink);
+  display: block;
+}
+
+.stat-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  color: #6040a0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.brands-strip {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.brand-pill {
+  background: var(--brand-card);
+  border: 1px solid var(--brand-border);
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  color: #9070b0;
+  text-decoration: none !important;
+  transition: all 0.2s;
+}
+
+.brand-pill:hover {
+  border-color: var(--brand-pink);
+  color: var(--brand-pink);
+}
+
+.spec-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.85rem;
+}
+
+.spec-table tr {
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.spec-table td:first-child {
+  font-family: 'Share Tech Mono', monospace;
+  color: #6040a0;
+  padding: 0.75rem 0;
+  width: 40%;
+}
+
+.spec-table td:last-child {
+  font-family: 'Share Tech Mono', monospace;
+  color: #e0d0ff;
+  padding: 0.75rem 0;
+}
+
+@media (max-width: 768px) {
+  .stats-bar { grid-template-columns: repeat(2, 1fr); }
+  .phones-grid { grid-template-columns: 1fr; }
+  .hero-banner { padding: 2.5rem 1.5rem; }
+}
+
+/* ── Modal 404 ── */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(10,0,20,0.85);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-box {
+  background: #120820;
+  border: 1px solid #ff2d78;
+  border-radius: 8px;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 60px rgba(255,45,120,0.2);
+}
+
+.modal-code {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 5rem;
+  color: #ff2d78;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.modal-title {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1rem;
+  color: #9070b0;
+  margin-bottom: 0.5rem;
+}
+
+.modal-text {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  color: #6040a0;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.modal-close {
+  display: inline-block;
+  background: #ff2d78;
+  color: #fff !important;
+  padding: 0.65rem 2rem;
+  border-radius: 4px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.modal-close:hover {
+  background: #cc1a5e;
+}
