@@ -4,4 +4,3 @@
 |---|-----------------------------|
 | > Телефон | 8-952-033-68-65 (бесплатно) |
 | > Email | khasanov4mir@gmail.com      |
-| > Telegram | @phonemarket                |

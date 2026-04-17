@@ -52,7 +52,7 @@
       <div class="phone-badge">> флагман</div>
       <div class="phone-name">iPhone 16 Pro Max</div>
       <div class="phone-specs">6.9" · A18 Pro · 512 ГБ · 48 Мп</div>
-      <div><span class="phone-price">129 990 ₽</span></div>
+      <div><span class="phone-price">125 990 ₽</span></div>
       <a href="../../404/" class="buy-btn">// купить</a>
     </div>
 
@@ -60,7 +60,7 @@
       <div class="phone-badge">> флагман</div>
       <div class="phone-name">Samsung Galaxy S25 Ultra</div>
       <div class="phone-specs">6.9" · Snapdragon 8 Elite · 512 ГБ · 200 Мп</div>
-      <div><span class="phone-price">119 990 ₽</span></div>
+      <div><span class="phone-price">80 990 ₽</span></div>
       <a href="../../404/" class="buy-btn">// купить</a>
     </div>
 
@@ -68,7 +68,7 @@
       <div class="phone-badge">> флагман</div>
       <div class="phone-name">Google Pixel 9 Pro XL</div>
       <div class="phone-specs">6.8" · Tensor G4 · 256 ГБ · 50 Мп</div>
-      <div><span class="phone-price">94 990 ₽</span></div>
+      <div><span class="phone-price">68 990 ₽</span></div>
       <a href="../../404/" class="buy-btn">// купить</a>
     </div>
 
